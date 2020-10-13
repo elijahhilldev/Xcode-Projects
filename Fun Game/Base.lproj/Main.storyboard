@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fun Game-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Fun Game" id="BYZ-38-t0r" customClass="ViewController" customModule="Fun_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vF-NH-cB4">
+                                <rect key="frame" x="60" y="333" width="255" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="Start Game!"/>
+                                <connections>
+                                    <action selector="startpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jPL-Cf-tsQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTr-cv-jUQ">
+                                <rect key="frame" x="50" y="141" width="76" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="🦄  "/>
+                                <connections>
+                                    <action selector="goodpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BHA-65-ces"/>
+                                    <action selector="goodpressed:" destination="BYZ-38-t0r" eventType="touchDown" id="i7X-84-YIo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpN-Kt-ojA">
+                                <rect key="frame" x="253" y="504" width="54" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="💩"/>
+                                <connections>
+                                    <action selector="badpressed:" destination="BYZ-38-t0r" eventType="touchDown" id="5qI-JZ-hWb"/>
+                                    <action selector="badpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UHC-g6-zJN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKs-L8-8V6">
+                                <rect key="frame" x="119" y="413" width="137" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Leaderboard"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9o-p5-0f7">
+                                <rect key="frame" x="160.33333333333334" y="237" width="54.333333333333343" height="108"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="x9o-p5-0f7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="193" id="1XN-lu-sfC"/>
+                            <constraint firstItem="JTr-cv-jUQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="97" id="BoH-Og-yCq"/>
+                            <constraint firstItem="9vF-NH-cB4" firstAttribute="centerX" secondItem="CKs-L8-8V6" secondAttribute="centerX" id="ERw-sZ-MZx"/>
+                            <constraint firstItem="9vF-NH-cB4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jqb-7h-D0o"/>
+                            <constraint firstItem="dpN-Kt-ojA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="253" id="LQR-EI-Y6A"/>
+                            <constraint firstItem="9vF-NH-cB4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="333" id="Z6W-Wr-aZV"/>
+                            <constraint firstItem="dpN-Kt-ojA" firstAttribute="top" secondItem="9vF-NH-cB4" secondAttribute="bottom" constant="99" id="fbL-Hz-oSN"/>
+                            <constraint firstItem="CKs-L8-8V6" firstAttribute="top" secondItem="9vF-NH-cB4" secondAttribute="bottom" constant="8" id="iEU-dE-F7p"/>
+                            <constraint firstItem="9vF-NH-cB4" firstAttribute="centerX" secondItem="x9o-p5-0f7" secondAttribute="centerX" id="ihe-x0-0ww"/>
+                            <constraint firstItem="JTr-cv-jUQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="nzh-dK-Gmw"/>
+                            <constraint firstItem="x9o-p5-0f7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160.33333333333337" id="vdn-6T-MTq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="badButton" destination="dpN-Kt-ojA" id="bG8-gK-ZaQ"/>
+                        <outlet property="goodButton" destination="JTr-cv-jUQ" id="A31-w5-Gzx"/>
+                        <outlet property="leaderboardButton" destination="CKs-L8-8V6" id="mce-yh-GA7"/>
+                        <outlet property="pointsLabel" destination="x9o-p5-0f7" id="fQZ-We-Zzh"/>
+                        <outlet property="startGameButton" destination="9vF-NH-cB4" id="jre-36-eOK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-506.39999999999998" y="128.57142857142858"/>
+        </scene>
+    </scenes>
+</document>
